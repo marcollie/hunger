@@ -1,0 +1,374 @@
+/* CSS reset */
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.head {
+    padding: 5%;
+    padding-top: 2%;
+    font-size: 0.8em;
+    background-image: url(/images/headerBg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+
+    .head .nav_left {
+        float: left;
+        height: 50%;
+        width: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .nav_left li {
+        float: left;
+        position: relative;
+        height: 100%;
+        width: auto;
+        margin-right: 7em;
+    }
+
+    .nav_left li:last-child {
+        margin: 0;
+    }
+
+    #nav_key {
+        width: 11%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #nav_key img {
+        width: 100%;
+        height: auto;
+    }
+
+    .head .nav_right {
+        float: right;
+        height: 50%;
+        width: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .nav_right li {
+        position: relative;
+        height: 100%;
+        width: auto;
+        float: left;
+        margin-right: 7em;
+    }
+
+
+    .nav_right li:last-child {
+        margin: 0;
+    }
+
+    .homeBox {
+        position: relative;
+        width: auto;
+        height: 200px;
+        margin-top: 80px;
+    }
+
+    .workTime {
+        position: absolute;
+        left: -115px;
+        top: 120px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        transform: rotate(-90deg);
+    }
+
+    .resTEXT {
+        text-align: center;
+    }
+
+    .mainName {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 80px;
+        line-height: 120px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .nameLine {
+        width: 10%;
+        height: 3%;
+        margin: 0 auto;
+        background-color: #E8C300;
+        border-radius: 50px;
+    }
+
+    .btnBox {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .btnBox button {
+        all: unset;
+        width: 18%;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 9px;
+        margin: 0 2%;
+        cursor: pointer;
+    }
+
+    .btnBox button:hover {
+        background-color: #E8C300;
+    }
+
+    .snsBox {
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
+
+    .snsBox li {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 40%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .snsBox li:hover {
+        background-color: #E8C300;
+    }
+
+    .snsBox .facebook {
+        background-image: url(/images/facebook.png);
+    }
+
+    .snsBox .twitter {
+        background-image: url(/images/twitter.png);
+    }
+
+    .snsBox .insta {
+        background-image: url(/images/insta.png);
+    }
+
+    .downBtn {
+        text-align: center;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        margin: 0 auto;
+        background-image: url(/images/downbtn.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+
+    .contents {
+        position: relative;
+        padding: 5%;
+        width: 90%;
+        height: 100%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contents div {
+        margin: 0 4%;
+    }
+
+    .contents .contentsText {
+        width: 40%;
+        text-align: center;
+    }
+
+    .contentsTitle {
+        text-transform: uppercase;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 2em;
+    }
+
+    .contentsLine {
+        width: 100px;
+        height: 5px;
+        background-color: #E8C300;
+        margin: 0 auto;
+        border-radius: 20px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .contents .contentsImg {
+        width: 40%;
+        height: 40%;
+    }
+
+    .contentsImg .contentsImage {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .contentsImg .imgRect {
+        position: absolute;
+        top: 20%;
+        right: 2%;
+        width: 25%;
+        height: auto;
+    }
+
+    .team {
+        width: 100%;
+        height: 100%;
+    }
+
+    .team .contents {
+        background-image: url(/images/masterchefBg.png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+
+    .team .ourteam {
+        position: absolute;
+        height: 13%;
+        top: 0;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .leftRect {
+        left: 0%;
+    }
+    
+    .cont-table {
+        height: 255px;
+        position: relative;
+    }
+    
+    .book-table {
+        width: 100%;
+        height: 170px;
+    }
+    
+    .book-table input{
+        width: 95%;
+        height: 80%;
+        border-style: none;
+        background-color: #E5E5E5;
+        border-radius: 5px;
+        padding-left: 5%;
+    }
+    
+    .book-table select {
+        width: 100%;
+        height: 80%;
+        border-style: none;
+        background-color: #E5E5E5;
+        border-radius: 5px;
+        padding-left: 2%;
+        color: rgba(51, 51, 51, 0.5);
+    }
+    
+    .bookBtn {
+        position: absolute;
+        margin: 0;
+        width: 99%;
+        height: 40px;
+        background-color: #E8C300;
+        border: 0;
+        border-radius: 5px;
+        left: 0;
+        bottom: 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
