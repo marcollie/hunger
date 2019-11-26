@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="data:;base64,ivBORw0KGgo=">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <title>Hunger</title>
   <link type="text/css" rel="stylesheet" href="css/index.css" />
 </head>
@@ -157,10 +159,12 @@
           <div class="toptitle slttitle">s p e c i a l t i e s</div>
           <div class="slidebox">
             <ul class="slider">
-              <li>
+             
+              <li id="pancake">
                 <div class="slideImg">
-                  <img src="images/teamimg.png" alt="about" class="slideImage">
-                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> </div>
+                  <img src="images/chocpancakes.png" alt="chocolate pancakes" class="slideImage">
+                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> 
+                </div>
                 <div class="slideText">
                   <h3 class="contentsTitle">chocolate pancakes</h3>
                   <p class="contentsLine"></p>
@@ -170,23 +174,66 @@
                     <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                 </div>
               </li>
+              
+              <li id="tiramisu">
+                <div class="slideImg">
+                  <img src="images/tiramisu.png" alt="tiramisu" class="slideImage">
+                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> 
+                </div>
+                <div class="slideText">
+                  <h3 class="contentsTitle">tiramisu</h3>
+                  <p class="contentsLine"></p>
+                  <p class="desctxt">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
+                    <br />
+                    <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+              </li>
+              
+              <li id="eggtart">
+                <div class="slideImg">
+                  <img src="images/eggtart.png" alt="eggtart" class="slideImage">
+                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> 
+                </div>
+                <div class="slideText">
+                  <h3 class="contentsTitle">eggtart</h3>
+                  <p class="contentsLine"></p>
+                  <p class="desctxt">
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
+                    <br />
+                    <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+              </li>
+              
             </ul>
             <div class="sldbtn">
               <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li id="rdo1">1</li>
+                <li id="rdo2">2</li>
+                <li id="rdo3">3</li>
               </ul>
             </div>
           </div>
-
-
         </div>
       </div>
-      <div class="galerie"> </div>
+
+      <div class="menu">
+        <div class="menubox">
+          <div class="contentsText">
+            <h3 class="contentsTitle">masterchef</h3>
+            <p class="contentsLine"></p>
+            <p class="desctxt">
+              <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="events"> </div>
       <div class="contact"> </div>
 
     </div>
   </div>
-</body></html>
+  <script src="slidequery.js"></script>
+</body>
+</html>
