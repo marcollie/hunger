@@ -9,14 +9,20 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#menutable').load('./menutable.html');
+    });
+  </script>
   <title>Hunger</title>
-  <link type="text/css" rel="stylesheet" href="css/index.css" />
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/index1.css" />
 </head>
 
 <body>
-  <div class="wrap">
+  <div id="wrap">
     <header class="head">
-      <div class="nav">
+      <nav>
         <ul class="nav_left">
           <li class="nav-home"><a class="pagelink" href="#">HOME</a></li>
           <li class="nav-about"><a class="pagelink" href="#">ABOUT</a></li>
@@ -30,7 +36,7 @@
           <li class="nav-contact"><a class="pagelink" href="#">CONTACT</a></li>
         </ul>
         <div id="nav_key"> <img src="images/navkey.png" alt="키" /> </div>
-      </div>
+      </nav>
       <div class="homeBox">
         <p class="workTime">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
         <p class="resTEXT">R E S T A U R A N T</p>
@@ -50,7 +56,6 @@
         <div class="downBtn"></div>
       </div>
     </header>
-
     <div class="contentsBox">
       <div class="contents">
         <div class="contentsText">
@@ -62,7 +67,6 @@
         </div>
         <div class="contentsImg"> <img src="images/about-img.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect"> </div>
       </div>
-
       <div class="team">
         <div class="contents">
           <div class="toptitle">o u r&nbsp&nbsp&nbsp t e a m</div>
@@ -76,7 +80,6 @@
           </div>
         </div>
       </div>
-
       <div class="booking">
         <div class="contents">
           <div class="contentsText cont-table">
@@ -85,16 +88,13 @@
             <table class="book-table">
               <tr>
                 <td>
-                  <input type="text" class="inputBox" placeholder="Name">
-                </td>
+                  <input type="text" class="inputBox" placeholder="Name"> </td>
                 <td>
-                  <input type="text" class="inputBox" placeholder="Email">
-                </td>
+                  <input type="text" class="inputBox" placeholder="Email"> </td>
               </tr>
               <tr>
                 <td>
-                  <input type="text" class="inputBox" placeholder="Phone">
-                </td>
+                  <input type="text" class="inputBox" placeholder="Phone"> </td>
                 <td>
                   <select name="people" id="">
                     <option value="">People</option>
@@ -108,8 +108,7 @@
                 </td>
               <tr>
                 <td>
-                  <input type="text" class="inputBox" placeholder="Date(mm/dd)">
-                </td>
+                  <input type="text" class="inputBox" placeholder="Date(mm/dd)"> </td>
                 <td>
                   <select name="people" id="">
                     <option value="">Time</option>
@@ -140,71 +139,59 @@
               <tr>
                 <td>
                   <input type="button" value="BOOK NOW" class="bookBtn">
-                  <td />
+                </td>
               </tr>
             </table>
           </div>
-          <div class="contentsImg">
-            <img src="images/bookimg.png" alt="about" class="contentsImage">
-            <img src="images/imagerect.png" alt="imagerect" class="imgRect">
-          </div>
-          <div class="book-contact">
-            Mon - Fri: <strong> 8PM - 10PM</strong>, Sat - Sun: <strong> 8PM - 3AM</strong>, Phone: <strong> +40 729 131 637/+40 726 458 782</strong>
-          </div>
+          <div class="contentsImg"> <img src="images/bookimg.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect"> </div>
+          <div class="book-contact"> Mon - Fri: <strong> 8PM - 10PM</strong>, Sat - Sun: <strong> 8PM - 3AM</strong>, Phone: <strong> +40 729 131 637/+40 726 458 782</strong> </div>
         </div>
       </div>
-
       <div class="specialty">
         <div class="slide">
           <div class="toptitle slttitle">s p e c i a l t i e s</div>
           <div class="slidebox">
+            <div class="contents" id="dummy">
+              <div class="contentsImg"> <img src="images/teamimg.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect leftRect"> </div>
+              <div class="contentsText">
+                <h3 class="contentsTitle">masterchef</h3>
+                <p class="contentsLine"></p>
+                <p class="desctxt"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
+                  <br />
+                  <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+              </div>
+            </div>
             <ul class="slider">
-             
               <li id="pancake">
-                <div class="slideImg">
-                  <img src="images/chocpancakes.png" alt="chocolate pancakes" class="slideImage">
-                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> 
-                </div>
+                <div class="slideImg"> <img src="images/chocpancakes.png" alt="chocolate pancakes" class="slideImage"> <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> </div>
                 <div class="slideText">
                   <h3 class="contentsTitle">chocolate pancakes</h3>
                   <p class="contentsLine"></p>
-                  <p class="desctxt">
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
+                  <p class="desctxt"> <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
                     <br />
                     <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                 </div>
               </li>
-              
               <li id="tiramisu">
-                <div class="slideImg">
-                  <img src="images/tiramisu.png" alt="tiramisu" class="slideImage">
-                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> 
-                </div>
+                <div class="slideImg"> <img src="images/tiramisu.png" alt="tiramisu" class="slideImage"> <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> </div>
                 <div class="slideText">
                   <h3 class="contentsTitle">tiramisu</h3>
                   <p class="contentsLine"></p>
-                  <p class="desctxt">
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
+                  <p class="desctxt"> <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
                     <br />
                     <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                 </div>
               </li>
-              
               <li id="eggtart">
-                <div class="slideImg">
-                  <img src="images/eggtart.png" alt="eggtart" class="slideImage">
-                  <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> 
-                </div>
+                <div class="slideImg"> <img src="images/eggtart.png" alt="eggtart" class="slideImage"> <img src="images/imagerect.png" alt="imagerect" class="slimgRect leftRect"> </div>
                 <div class="slideText">
                   <h3 class="contentsTitle">eggtart</h3>
                   <p class="contentsLine"></p>
-                  <p class="desctxt">
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
+                  <p class="desctxt"> <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
                     <br />
                     <br />Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
                 </div>
               </li>
-              
             </ul>
             <div class="sldbtn">
               <ul>
@@ -218,22 +205,33 @@
       </div>
 
       <div class="menu">
-        <div class="menubox">
-          <div class="contentsText">
-            <h3 class="contentsTitle">masterchef</h3>
+        <div class="menucontents">
+          <div class="menuText">
+            <h3 class="contentsTitle">delicious menu</h3>
             <p class="contentsLine"></p>
-            <p class="desctxt">
-              <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
-              </strong>
+            <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong>
             </p>
           </div>
+          <div class="menutitle">
+            <ul>
+              <li id="btnsoupe">soupe</li>
+              <li id="btnpizza">pizza</li>
+              <li id="btnpasta">pasta</li>
+              <li id="btndesert">desert</li>
+              <li id="btnwine">wine</li>
+              <li id="btnbeer">beer</li>
+              <li id="btndrinks">dringks</li>
+            </ul>
+          </div>
+          <div class="menulist" id="menutable">
+
+          </div>
+
         </div>
       </div>
       <div class="events"> </div>
       <div class="contact"> </div>
-
     </div>
   </div>
   <script src="slidequery.js"></script>
-</body>
-</html>
+</body></html>
