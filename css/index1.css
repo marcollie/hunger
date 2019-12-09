@@ -277,10 +277,11 @@ nav li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0;
 	width: 95%;
 	font-size: 0.7em;
-  	color: white;
+  color: white;
+  letter-spacing: 0.5em;
+  font-weight: bold;
 }
 
 .leftRect {
@@ -333,7 +334,7 @@ nav li {
 	width: 100%;
 }
 
-.book-contact {
+.contcontact {
 	position: absolute;
   width: 100%;
   text-align: center;
@@ -450,6 +451,7 @@ nav li {
 .menucontents {
   padding: 5%;
   text-align: center;
+  margin: 2% 0;
 }
 
 .menuText {
@@ -512,6 +514,256 @@ nav li {
   opacity: 0;
 }
 
+.events {
+	width: 100%;
+}
+
+.events .contents {
+	background-image: url('../images/eventbg.png');
+	background-position: center;
+	background-size: cover;
+	color: white;
+ 	width: 90%;
+}
+
+.events .contcontact {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#eventimgbox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  padding: 1%;
+}
+
+.eventimgl {
+  position: relative;
+}
+
+.eventimgr {
+  position: relative;
+}
+
+.evttitle {
+  background-color: black;
+  position: absolute;
+  width: 18%;
+  height: 83.2%;
+  top: 8.3%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 1.8em;
+}
+
+#evttitle1 {
+  right: 8.5%;
+  writing-mode: vertical-lr; 
+  transform: rotate(360deg);
+}
+
+#evttitle1 span {
+  display: block;
+  width: auto;
+  margin-bottom: 60%;
+  margin-left: 9%;
+  text-align: center;
+}
+
+
+#evttitle2 {
+  left: 8.5%;
+  writing-mode: vertical-lr; 
+  transform: rotate(180deg);
+}
+
+#evttitle2 span {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-bottom: 20%;
+  margin-left: 9%;
+  text-align: center;
+}
+
+.events .imgRect {
+  top: 23%;
+	right: 0.5%;
+	width: 55%;
+	height: auto;
+}
+
+.events .rect1 {
+  left: -13%;
+}
+
+.events .rect2 {
+  right: -10%;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery .gallery-box {
+  display: flex;
+}
+
+.gallery-box img {
+  width: 25%;
+  cursor: pointer;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact .contentsText {
+  width: 100%;
+  height: 400px
+}
+
+#contact-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-table {
+  width: 100%;
+  height: 72%;
+}
+
+.contact-table table {
+  width: 100%;
+  height: 200px;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.contact-table td {
+  height: 50px;
+}
+
+.contact-table .cont-input {
+  height: 50px;
+  width: 92%;
+  background-color: #E5E5E5;
+  border-style: none;
+  border-radius: 5px;
+  padding-left: 7%;
+}
+
+#cont-msg {
+  width: 96%;
+  height: 200%;
+  resize: none;
+  background-color: #E5E5E5;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: Open Sans, sans-serif;
+  padding: 2%;
+}
+
+textarea::placeholder {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 1em;
+  font-family: Open Sans, sans-serif;
+}
+
+.cont-info {
+  width: 100%;
+  height: 55px;
+  display: inline-block;
+  margin-bottom: 10%;
+}
+
+.cont-info ul {
+  width: 100%;
+  height: 55px;
+  display: inline-block;
+}
+
+.cont-info ul li {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.cont-info #cont-addli {
+  font-size: 0.7em;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.cont-info li p {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.cont-img {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/contact.png);
+}
+
+#locimg {
+  width: 12px;
+}
+
+#celimg {
+  background-position: 30px 0;
+}
+
+#mailimg {
+  background-position: 15px 0;
+}
+
+#cont-btnli {
+  display: inline-block;
+  width: 46%;
+}
+
+#sendbtn {
+  background-color: #E8C300;
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 5px;
+	cursor: pointer;
+	color: white;
+}
+
+#sendbtn p {
+  margin: 0 auto;
+}
+
+.map {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  line-height: 100px;
+}
+
+footer p {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
 
 
 
@@ -540,6 +792,7 @@ nav li {
   .nav_right li {
     margin-right: 6vw;
   }
+  
 
 }
 
@@ -557,6 +810,13 @@ nav li {
     margin-right: 8vh;
 
 }
+  
+  .evttitle {
+  font-size: 1.3em;
+}
+  
+  
+
   
   
 }

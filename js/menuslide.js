@@ -1,5 +1,5 @@
 $('#btnsoupe').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tblsoupe').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
@@ -7,7 +7,7 @@ $('#btnsoupe').click(function(e){
 });
 
 $('#btnpizza').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tblpizza').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
@@ -15,7 +15,7 @@ $('#btnpizza').click(function(e){
 });
 
 $('#btnpasta').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tblpasta').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
@@ -23,7 +23,7 @@ $('#btnpasta').click(function(e){
 });
 
 $('#btndesert').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tbldesert').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
@@ -31,7 +31,7 @@ $('#btndesert').click(function(e){
 });
 
 $('#btnwine').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tblwine').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
@@ -39,7 +39,7 @@ $('#btnwine').click(function(e){
 });
 
 $('#btnbeer').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tblbeer').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
@@ -47,7 +47,7 @@ $('#btnbeer').click(function(e){
 });
 
 $('#btndrinks').click(function(e){    
-  $('#menutable table').fadeOut('slow').promise().done(function(){
+  $('#menutable .tblshow').fadeOut('slow').promise().done(function(){
       $('#tbldrinks').fadeIn('slow');
   });
   $('.menutitle ul li').css('background-color', 'white');
