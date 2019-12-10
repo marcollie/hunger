@@ -19,7 +19,7 @@ header {
   width: 100%;
   height: 100%;
   background-image: url(../images/headerBg.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   color: white;
   
@@ -35,27 +35,31 @@ nav a {
   text-decoration: none;
 }
 
-nav li {
-  vertical-align: middle;
-}
-
-.head .nav_left {
-	float: left;
-	width: auto;
+.head .navul {
+	width: 100%;
 	position: relative;
 	top: 40%;
+  text-align: center;
 }
 
-.nav_left li {
-	float: left;
-	position: relative;
-	height: 100%;
-	margin-left: 100px;
+.navul li {
+	display: inline-block;
+  position: relative;
+	margin: 0 2.5vw;
+  top: -30px;
+  cursor: pointer;
 }
 
+#nav_img {
+  display: inline-block;
+  width: 10%;
+  margin: 0 auto;
+  top: 0;
+  cursor: default;
+}
 
 #nav_key {
-	width: 11%;
+	width: 100%;
 	text-align: center;
 	margin: 0 auto;
   position: relative;
@@ -64,41 +68,30 @@ nav li {
 
 #nav_key img {
 	width: 80%;
-	height: auto;
-
+  height: auto;
+  transition: all ease 1s;
 }
 
-.head .nav_right {
-	float: right;
-	width: auto;
-	position: relative;
-	top: 40%;
-}
-
-.nav_right li {
-	position: relative;
-	height: 100%;
-	width: auto;
-	float: left;
-	margin-right: 100px;
+#keyimg:hover {
+	transform: rotate( -45deg );
 }
 
 .homeBox {
   position: relative;
   width: 100%;
-  height: 80%;
+  height: 75%;
 }
 
 .workTime {
 	position: absolute;
-	top: 50%;
-	left: -5%;
+	left: 3%;
+  top: 32%;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
-	line-height: 12px;
 	text-align: center;
-	transform: rotate(-90deg);
+  writing-mode: vertical-lr; 
+  transform: rotate(180deg);
 }
 
 .resTEXT {
@@ -120,7 +113,7 @@ nav li {
 
 .nameLine {
 	position: absolute;
-	top: 55%;
+	top: 58%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 10%;
@@ -133,7 +126,7 @@ nav li {
 	text-align: center;
 	position: absolute;
 	width: 100%;
-	top: 62%;
+	top: 65%;
 }
 
 .btnBox button {
@@ -195,7 +188,7 @@ nav li {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 0;
+	bottom: -10%;
 }
 
 .contentsBox {
@@ -619,10 +612,15 @@ nav li {
   height: 100%;
 }
 
+.contact .contents {
+  position: relative;
+}
+
 
 .contact .contentsText {
   width: 100%;
-  height: 400px
+  height: 400px;
+  margin: 0;
 }
 
 #contact-text {
@@ -785,13 +783,13 @@ footer p {
     width: 100%;
   }
   
-  .nav_left li {
-  	margin-left: 6vw;
-  }
-
-  .nav_right li {
-    margin-right: 6vw;
-  }
+  .nameLine {
+	top: 62%;
+}
+  
+  .btnBox {
+	top: 70%;
+}
   
 
 }
@@ -804,6 +802,18 @@ footer p {
   #wrap {
     width: 100%;
   }
+  
+  .navul li {
+	margin: 0 2vw;
+}
+  
+  .nameLine {
+	top: 62%;
+}
+  
+  .btnBox {
+	top: 70%;
+}
   
   .slider li .slideText {
     margin-top: 5vw;
@@ -821,7 +831,7 @@ footer p {
   
 }
 
-@media ( max-width: 480px ) {
+@media ( max-width: 780px ) {
   body {
     background-color: firebrick;
   }
