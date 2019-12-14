@@ -10,17 +10,18 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('#menutable').load('./menutable.html');
     });
   </script>
   <title>Hunger</title>
   <link type="text/css" rel="stylesheet" href="css/reset.css" />
-  <link type="text/css" rel="stylesheet" href="css/index1.css" /> 
+  <link type="text/css" rel="stylesheet" href="css/index1.css" />
 </head>
 
 <body>
   <div id="wrap">
+
     <header class="head">
       <nav>
         <ul class="navul">
@@ -31,10 +32,10 @@
           <li id="nav_img">
             <div id="nav_key"> <img id="keyimg" src="images/navkey.png" alt="키" /> </div>
           </li>
-          <li class="nav-menu" onclick="pageMove('5')">MENU</li>
-          <li class="nav-events" onclick="pageMove('6')">EVENTS</li>
-          <li class="nav-galerie" onclick="pageMove('7')">GALERIE</li>
-          <li class="nav-contact" onclick="pageMove('8')">CONTACT</li>
+          <li class="nav-menu" onclick="pageMove('4')">MENU</li>
+          <li class="nav-events" onclick="pageMove('5')">EVENTS</li>
+          <li class="nav-galerie" onclick="pageMove('6')">GALERIE</li>
+          <li class="nav-contact" onclick="pageMove('7')">CONTACT</li>
         </ul>
       </nav>
       <div class="homeBox">
@@ -53,11 +54,15 @@
             <li class="insta"></li>
           </ul>
         </div>
-        <div class="downBtn"></div>
+        <div class="downBtn" onclick="pageMove('1')"></div>
       </div>
     </header>
     <div class="contentsBox">
+      <div class="bttbox">
+        <div class="btntotop" onclick="totop()"></div>
+      </div>
       <div class="contents" id="cont1">
+
         <div class="contentsText">
           <h3 class="contentsTitle">about us</h3>
           <p class="contentsLine"></p>
@@ -80,7 +85,7 @@
           </div>
         </div>
       </div>
-      <div class="booking"  id="cont3">
+      <div class="booking" id="cont3">
         <div class="contents">
           <div class="contentsText cont-table">
             <h3 class="contentsTitle">book a table</h3>
@@ -106,47 +111,47 @@
                     <option value="6">6</option>
                   </select>
                 </td>
-                <tr>
-                  <td>
-                    <input type="text" class="inputBox" placeholder="Date(mm/dd)"> </td>
-                  <td>
-                    <select name="people" id="">
-                      <option value="">Time</option>
-                      <optgroup label="Luch Time">
-                        <option value="11:00">11:00</option>
-                        <option value="11:30">11:30</option>
-                        <option value="12:00">12:00</option>
-                        <option value="12:30">12:30</option>
-                        <option value="13:00">13:00</option>
-                        <option value="13:30">13:30</option>
-                        <option value="14:00">14:00</option>
-                        <option value="14:30">14:30</option>
-                        <option value="15:00">15:00</option>
-                        <option value="15:30">15:30</option>
-                        <option value="16:00">16:00</option>
-                      </optgroup>
-                      <optgroup label="Dinner Time">
-                        <option value="16:00">17:30</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:30">19:30</option>
-                        <option value="20:00">20:00</option>
-                        <option value="20:30">20:30</option>
-                        <option value="21:00">21:00</option>
-                        <option value="21:30">21:30</option>
-                      </optgroup>
-                    </select>
-                  </td>
-                  <tr>
-                    <td>
-                      <input type="button" value="BOOK NOW" class="bookBtn"> </td>
-                  </tr>
+              <tr>
+                <td>
+                  <input type="text" class="inputBox" placeholder="Date(mm/dd)"> </td>
+                <td>
+                  <select name="people" id="">
+                    <option value="">Time</option>
+                    <optgroup label="Luch Time">
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:30</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:30</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:30</option>
+                      <option value="16:00">16:00</option>
+                    </optgroup>
+                    <optgroup label="Dinner Time">
+                      <option value="16:00">17:30</option>
+                      <option value="18:00">18:00</option>
+                      <option value="19:30">19:30</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:30</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:30</option>
+                    </optgroup>
+                  </select>
+                </td>
+              <tr>
+                <td>
+                  <input type="button" value="BOOK NOW" class="bookBtn"> </td>
+              </tr>
             </table>
           </div>
           <div class="contentsImg"> <img src="images/bookimg.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect"> </div>
           <div class="contcontact"> Mon - Fri: <strong> 8PM - 10PM</strong>, Sat - Sun: <strong> 8PM - 3AM</strong>, Phone: <strong> +40 729 131 637/+40 726 458 782</strong> </div>
         </div>
       </div>
-      <div class="specialty"  id="cont4">
+      <div class="specialty" id="cont4">
         <div class="slide">
           <div class="toptitle slttitle">specialties</div>
           <div class="slidebox">
@@ -202,12 +207,12 @@
           </div>
         </div>
       </div>
-      <div class="menu"  id="cont5">
+      <div class="menu" id="cont5">
         <div class="menucontents">
           <div class="menuText">
             <h3 class="contentsTitle">delicious menu</h3>
             <p class="contentsLine"></p>
-            <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong> </p>
+            <p id="menudesc"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</strong> </p>
           </div>
           <div class="menutitle">
             <ul>
@@ -225,22 +230,29 @@
           </div>
         </div>
       </div>
-      <div class="events"  id="cont6">
+      <div class="events" id="cont6">
         <div class="contents">
           <div class="toptitle">PRIVATE EVENTS</div>
           <div class="contentsImg" id="eventimgbox">
             <div class="eventimgl">
-              <div class="evttitle" id="evttitle1"> <span>weddings</span> </div> <img src="images/eventimg1.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect rect1"> </div>
+              <div class="evttitle" id="evttitle1"> <span>weddings</span> </div> <img src="images/eventimg1.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect rect1">
+            </div>
             <div class="eventimgr">
-              <div class="evttitle" id="evttitle2"> <span>corporate pzrties</span> </div> <img src="images/eventimg2.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect rect2"> </div>
+              <div class="evttitle" id="evttitle2"> <span>corporate pzrties</span> </div> <img src="images/eventimg2.png" alt="about" class="contentsImage"> <img src="images/imagerect.png" alt="imagerect" class="imgRect rect2">
+            </div>
           </div>
           <div class="contcontact"> Mon - Fri: <strong> 8PM - 10PM</strong>, Sat - Sun: <strong> 8PM - 3AM</strong>, Phone: <strong> +40 729 131 637/+40 726 458 782</strong> </div>
         </div>
       </div>
-      <div class="gallery"  id="cont7">
-        <div class="gallery-box"> <img src="images/gallery1.png" alt="" id="gel1"> <img src="images/gallery2.png" alt="" id="gel1"> <img src="images/gallery3.png" alt="" id="gel1"> <img src="images/gallery4.png" alt="" id="gel1"> </div>
+      <div class="gallery" id="cont7">
+        <div class="gallery-box"> 
+          <img src="images/gallery1.png" alt=""> 
+          <img src="images/gallery2.png" alt=""> 
+          <img src="images/gallery3.png" alt=""> 
+          <img src="images/gallery4.png" alt=""> 
+        </div>
       </div>
-      <div class="contact"  id="cont8">
+      <div class="contact" id="cont8">
         <div class="contents">
           <div class="contentsText contact-box">
             <h3 class="contentsTitle">CONTACT</h3>
@@ -282,7 +294,7 @@
           </div>
         </div>
       </div>
-      <div class="map"  id="cont9">
+      <div class="map" id="cont9">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.792192362123!2d127.10901274994949!3d37.39474644160826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5809134e293f%3A0x88afd0f7bd09e638!2z7YyQ6rWQ7Jet!5e0!3m2!1sko!2skr!4v1575707318111!5m2!1sko!2skr" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </div>
@@ -293,6 +305,6 @@
   <script src="./js/slidequery.js"></script>
   <script src="./js/menuslide.js"></script>
   <script src="./js/pagemove.js"></script>
-</body>
-
-</html>
+  <script src="./js/ttbtn.js"></script>
+  <script src="./js/mobileSl.js"></script>
+</body></html>
