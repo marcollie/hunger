@@ -1,15 +1,19 @@
-$(document).ready(function() {
+let index = 0;
+const slidebox = document.querySelector('.gallery-box');
+const firstitem = document.querySelector('.galImg');
+const firstClone = firstitem.cloneNode(true);
+slidebox.appendChild(firstClone);
 
-    var wdt = $('.gallery').width();
-        boxwdt = $('.gallery-box').width();
-        moved = false;
-        imgnum = $('.gallery-box>img').length;
+setInterval(function () {
+  slidebox.style.transition = '0.2s';
+  slidebox.style.transform = "translate3d(-" + 20 * (index + 1) + "%, 0px, 0px)";
 
-        setInterval(function() {
-          $('.gallery-box').animate({
-            left:-(wdt)
-          },500);
-          wdt = wdt*2;
-          console.log(wdt);
-        },1000)
-}); 
+  index++;
+  if (index === 4) {
+    setTimeout(function () {
+      slidebox.style.transition = '0s';
+      slidebox.style.transform = "translate3d(0px, 0px, 0px)";
+    }, 200)
+    index = 0;
+  }
+}, 1500);
